@@ -36,7 +36,3 @@ def newton_raphson(x):
         x = x - d
         d = func(x) / derivative_at_point(x)
     return x
-
-if __name__ == '__main__':
-    print("Value of root: ", bisector(-100, 100))
-    print("Value of root: ", newton_raphson(0.99999999))
